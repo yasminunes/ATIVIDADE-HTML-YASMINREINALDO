@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yasmin Store</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #fff8fb;
+      color: #333;
+    }
+
+    header {
+      background: #ffffff;
+      padding: 20px 7%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .logo {
+      font-size: 25px;
+      font-weight: bold;
+      color: #c75c88;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #444;
+      margin-left: 20px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #c75c88;
+    }
+
+    .banner {
+      min-height: 430px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 40px 20px;
+      background: linear-gradient(135deg, #f9d8e5, #fff1f6);
+    }
+
+    .banner h1 {
+      font-size: 48px;
+      color: #9d3f68;
+      margin-bottom: 15px;
+    }
+
+    .banner p {
+      font-size: 19px;
+      margin-bottom: 25px;
+    }
+
+    .botao {
+      display: inline-block;
+      background: #c75c88;
+      color: white;
+      padding: 14px 28px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .botao:hover {
+      background: #9d3f68;
+      transform: scale(1.05);
+    }
+
+    section {
+      padding: 60px 7%;
+    }
+
+    .titulo {
+      text-align: center;
+      margin-bottom: 35px;
+    }
+
+    .titulo h2 {
+      font-size: 32px;
+      color: #9d3f68;
+    }
+
+    .produtos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 25px;
+    }
+
+    .produto {
+      background: white;
+      border-radius: 18px;
+      padding: 18px;
+      text-align: center;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+      transition: 0.3s;
+    }
+
+    .produto:hover {
+      transform: translateY(-5px);
+    }
+
+    .imagem {
+      height: 200px;
+      border-radius: 14px;
+      background: #f4dce6;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 55px;
+      margin-bottom: 15px;
+    }
+
+    .produto h3 {
+      margin-bottom: 8px;
+    }
+
+    .preco {
+      color: #c75c88;
+      font-size: 21px;
+      font-weight: bold;
+      margin: 10px 0 15px;
+    }
+
+    .sobre {
+      background: #ffffff;
+      text-align: center;
+    }
+
+    .sobre p {
+      max-width: 700px;
+      margin: auto;
+      line-height: 1.7;
+      font-size: 17px;
+    }
+
+    .contato {
+      text-align: center;
+    }
+
+    .contato p {
+      margin: 12px;
+      font-size: 17px;
+    }
+
+    footer {
+      background: #9d3f68;
+      color: white;
+      text-align: center;
+      padding: 25px;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      nav a {
+        margin: 0 7px;
+        font-size: 14px;
+      }
+
+      .banner h1 {
+        font-size: 36px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">Yasmin Store ✨</div>
+
+    <nav>
+      <a href="#inicio">Início</a>
+      <a href="#produtos">Produtos</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+
+  <section class="banner" id="inicio">
+    <div>
+      <h1>Yasmin Store 💕</h1>
+      <p>Detalhes que deixam seu estilo ainda mais especial.</p>
+
+      <a href="#produtos" class="botao">
+        Ver produtos
+      </a>
+    </div>
+  </section>
+
+
+  <section id="produtos">
+
+    <div class="titulo">
+      <h2>✨ Nossos produtos</h2>
+      <p>Escolha seus favoritos!</p>
+    </div>
+
+    <div class="produtos">
+
+      <div class="produto">
+        <div class="imagem">💍</div>
+        <h3>Anel delicado</h3>
+        <p>Modelo elegante para o dia a dia.</p>
+        <div class="preco">R$ 29,90</div>
+        <a href="https://wa.me/5500000000000" class="botao">
+          Comprar
+        </a>
+      </div>
+
+
+      <div class="produto">
+        <div class="imagem">📿</div>
+        <h3>Colar delicado</h3>
+        <p>Um toque especial para qualquer look.</p>
+        <div class="preco">R$ 39,90</div>
+        <a href="https://wa.me/5500000000000" class="botao">
+          Comprar
+        </a>
+      </div>
+
+
+      <div class="produto">
+        <div class="imagem">✨</div>
+        <h3>Brinco elegante</h3>
+        <p>Perfeito para diversas ocasiões.</p>
+        <div class="preco">R$ 24,90</div>
+        <a href="https://wa.me/5500000000000" class="botao">
+          Comprar
+        </a>
+      </div>
+
+
+      <div class="produto">
+        <div class="imagem">💖</div>
+        <h3>Pulseira</h3>
+        <p>Delicada, moderna e cheia de estilo.</p>
+        <div class="preco">R$ 34,90</div>
+        <a href="https://wa.me/5500000000000" class="botao">
+          Comprar
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+
+  <section class="sobre" id="sobre">
+
+    <div class="titulo">
+      <h2>Sobre a loja 💗</h2>
+    </div>
+
+    <p>
+      A Yasmin Store nasceu para trazer acessórios lindos,
+      delicados e acessíveis para deixar cada look ainda mais especial.
+      Tudo escolhido com muito carinho para nossas clientes!
+    </p>
+
+  </section>
+
+
+  <section class="contato" id="contato">
+
+    <div class="titulo">
+      <h2>Entre em contato 📱</h2>
+    </div>
+
+    <p>📸 Instagram: @yasminstore</p>
+    <p>💬 WhatsApp: (00) 00000-0000</p>
+    <p>📍 Entregas e retiradas disponíveis na sua região</p>
+
+    <br>
+
+    <a href="https://wa.me/5500000000000" class="botao">
+      Falar pelo WhatsApp
+    </a>
+
+  </section>
+
+
+  <footer>
+    <p>© 2026 Yasmin Store — Todos os direitos reservados 💕</p>
+  </footer>
+
+</body>
+</html>
