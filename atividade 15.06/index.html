@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Alunos</title>
+</head>
+
+<body>
+
+    <h2>Cadastro de Alunos</h2>
+
+    <form action="#" method="POST">
+
+        <!-- Campo para Nome -->
+        <p>
+            <label for="nome">Nome do Aluno:</label><br>
+            <input type="text" id="nome" name="nome"
+                   placeholder="Digite o nome do aluno" required>
+        </p>
+
+        <!-- Campo para E-mail -->
+        <p>
+            <label for="email">E-mail do Aluno:</label><br>
+            <input type="email" id="email" name="email"
+                   placeholder="Digite o e-mail do aluno" required>
+        </p>
+
+        <!-- Campo para Senha -->
+        <p>
+            <label for="senha">Senha de Acesso:</label><br>
+            <input type="password" id="senha" name="senha" required>
+        </p>
+
+        <!-- Campo de Seleção -->
+        <p>
+            <label for="assunto">Assunto:</label><br>
+            <select id="assunto" name="assunto">
+                <option value="informatica">Informática</option>
+                <option value="atividade">Atividade</option>
+                <option value="duvida">Dúvida</option>
+                <option value="prova">Prova</option>
+            </select>
+        </p>
+
+        <!-- Caixa de Comentário -->
+        <p>
+            <label for="comentario">Comentário:</label><br>
+            <textarea id="comentario" name="comentario"
+                      rows="4" cols="30"
+                      placeholder="Digite seu comentário..."></textarea>
+        </p>
+
+        <!-- Botões -->
+        <p>
+            <button type="submit">Cadastrar</button>
+            <button type="reset">Apagar</button>
+        </p>
+
+    </form>
+
+</body>
+</html>
